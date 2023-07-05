@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Policies from './Policies'
 import { useState } from 'react';
+import Alert from './Alert';
 
 function App() {
   const [alert, setAlert] =useState(null);
@@ -16,6 +17,7 @@ function App() {
     }
   return (
     <div >
+      <Alert alert={alert} />
       <Policies showAlert={showAlert}/>
      
     </div>
